@@ -1,8 +1,8 @@
 <a href="https://github.com/microsoft/dbt-fabricspark/actions/workflows/integration.yml">
   <img src="https://github.com/microsoft/dbt-fabricspark/actions/workflows/integration.yml/badge.svg?branch=main&event=pull_request" alt="Adapter Integration Tests"/>
 </a>
-
 <br>
+
 [dbt](https://www.getdbt.com/) enables data analysts and engineers to transform their data using the same practices that software engineers use to build applications.
 
 Microsoft Fabric Lakehouse is a data architecture platform for storing, managing, and analyzing structured and unstructured data in a single location. 
@@ -26,7 +26,7 @@ pip install [path/to/dbt-fabricpsark]
 ```
 3. Install dependencies
 ```nofmt
-pip install -r [path/to/dev-requirements.txt]
+pip install -r [path/to/dbt-fabricspark/dev-requirements.txt]
 ```
 
 ### Running locally
