@@ -5,11 +5,11 @@
 
 [dbt](https://www.getdbt.com/) enables data analysts and engineers to transform their data using the same practices that software engineers use to build applications.
 
-Microsoft Fabric Lakehouse is a data architecture platform for storing, managing, and analyzing structured and unstructured data in a single location. 
+[Microsoft Fabric Lakehouse](https://www.microsoft.com/en-us/microsoft-fabric) is a data architecture platform for storing, managing, and analyzing structured and unstructured data in a single location. 
 
 ## dbt-fabricspark
 
-The `dbt-fabricspark` package contains all of the code enabling dbt to work with Synapse Spark in Microsoft Fabric. For more information, consult [the docs](https://docs.getdbt.com/docs/profile-fabricspark).
+The `dbt-fabricspark` package contains all of the code enabling dbt to work with Synapse Spark in Microsoft Fabric.
 
 The adapter is currently in beta and undergoing active development.
 
