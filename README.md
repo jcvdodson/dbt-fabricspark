@@ -22,7 +22,11 @@ git clone https://github.com/microsoft/dbt-fabricspark.git
 ```
 2. pip install from local path
 ```nofmt
-pip install -e [path/to/dbt-fabricpsark]
+pip install [path/to/dbt-fabricpsark]
+```
+3. Install dependencies
+```nofmt
+pip install -r [path/to/dev-requirements.txt]
 ```
 
 ### Running locally
