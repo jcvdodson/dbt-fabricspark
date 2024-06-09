@@ -5,19 +5,28 @@
 <br>
 [dbt](https://www.getdbt.com/) enables data analysts and engineers to transform their data using the same practices that software engineers use to build applications.
 
-dbt is the T in ELT. Organize, cleanse, denormalize, filter, rename, and pre-aggregate the raw data in your warehouse so that it's ready for analysis.
+Microsoft Fabric Lakehouse is a data architecture platform for storing, managing, and analyzing structured and unstructured data in a single location. 
 
 ## dbt-fabricspark
 
 The `dbt-fabricspark` package contains all of the code enabling dbt to work with Synapse Spark in Microsoft Fabric. For more information, consult [the docs](https://docs.getdbt.com/docs/profile-fabricspark).
 
+The adapter is currently in beta and undergoing active development.
+
 ## Getting started
 
-- [Install dbt](https://docs.getdbt.com/docs/installation)
-- Read the [introduction](https://docs.getdbt.com/docs/introduction/) and [viewpoint](https://docs.getdbt.com/docs/about/viewpoint/)
+### Installing dbt-fabricspark
+1. Clone the repo
+```nofmt
+git clone https://github.com/microsoft/dbt-fabricspark.git
+```
+2. pip install from local path
+```nofmt
+pip install -e [path/to/dbt-fabricpsark]
+```
 
-## Running locally
-Use livy endpoint to connect to Synapse Spark in Microsoft Fabric. The binaries required to setup local environment is not possiblw with Synapse Spark in Microsoft Fabric. However, you can configure profile to connect via livy endpoints.
+### Running locally
+Use livy endpoint to connect to Synapse Spark in Microsoft Fabric. The binaries required to setup local environment is not possible with Synapse Spark in Microsoft Fabric. However, you can configure profile to connect via livy endpoints.
 
 Create a profile like this one:
 
@@ -40,24 +49,16 @@ fabric-spark-test:
         retry_all: true
 ```
 
-### Reporting bugs and contributing code
+## Reporting bugs and contributing code
 
--   Want to report a bug or request a feature? Let us know on [Slack](http://slack.getdbt.com/), or open [an issue](https://github.com/microsoft/dbt-fabricspark/issues/new).
+- Want to report a bug or request a feature? Let us know on [Slack](http://community.getdbt.com/), or open [an issue](https://github.com/microsoft/dbt-fabricspark/issues/new)
+- Want to help us build dbt-fabricspark? Check out the [Contributing Guide](https://github.com/microsoft/dbt-fabricspark/blob/HEAD/CONTRIBUTING.md)
 
 ## Code of Conduct
 
-Everyone interacting in the Microsoft project's codebases, issue trackers, and mailing lists is expected to follow the [PyPA Code of Conduct](https://www.pypa.io/en/latest/code-of-conduct/).
+This project and everyone involved is expected to follow the [Microsoft Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 
 ## Join the dbt Community
 
 - Be part of the conversation in the [dbt Community Slack](http://community.getdbt.com/)
 - Read more on the [dbt Community Discourse](https://discourse.getdbt.com)
-
-## Reporting bugs and contributing code
-
-- Want to report a bug or request a feature? Let us know on [Slack](http://community.getdbt.com/), or open [an issue](https://github.com/microsoft/dbt-fabricspark/issues/new)
-- Want to help us build dbt? Check out the [Contributing Guide](https://github.com/microsoft/dbt-fabricspark/blob/HEAD/CONTRIBUTING.md)
-
-## Code of Conduct
-
-Everyone interacting in the dbt project's codebases, issue trackers, chat rooms, and mailing lists is expected to follow the [dbt Code of Conduct](https://community.getdbt.com/code-of-conduct).
